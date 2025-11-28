@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "TCS",
+    "companyName": "Tata Consultancy Services Ltd.",
+    "currentPrice": 3850.50,
+    "percentageChange": 0.85,
+    "volume": "1,500,000",
+    "dayHigh": 3870.00,
+    "dayLow": 3820.25,
+    "52WeekHigh": 4250.90,
+    "52WeekLow": 3200.10,
+    "marketCap": "14,00,000 Cr"
+  },
+  {
+    "symbol": "RELIANCE",
+    "companyName": "Reliance Industries Ltd.",
+    "currentPrice": 2980.75,
+    "percentageChange": -0.25,
+    "volume": "2,200,000",
+    "dayHigh": 3000.00,
+    "dayLow": 2975.00,
+    "52WeekHigh": 3100.00,
+    "52WeekLow": 2350.50,
+    "marketCap": "20,10,000 Cr"
+  },
+  {
+    "symbol": "INFY",
+    "companyName": "Infosys Ltd.",
+    "currentPrice": 1650.90,
+    "percentageChange": 1.55,
+    "volume": "1,800,000",
+    "dayHigh": 1660.00,
+    "dayLow": 1630.00,
+    "52WeekHigh": 1800.00,
+    "52WeekLow": 1400.00,
+    "marketCap": "6,80,000 Cr"
+  },
+  {
+    "symbol": "HDFC",
+    "companyName": "HDFC Bank Ltd.",
+    "currentPrice": 1500.20,
+    "percentageChange": -1.10,
+    "volume": "3,500,000",
+    "dayHigh": 1520.00,
+    "dayLow": 1490.50,
+    "52WeekHigh": 1750.00,
+    "52WeekLow": 1300.50,
+    "marketCap": "11,50,000 Cr"
+  },
+  {
+    "symbol": "ICICIBANK",
+    "companyName": "ICICI Bank Ltd.",
+    "currentPrice": 1050.40,
+    "percentageChange": 0.35,
+    "volume": "2,800,000",
+    "dayHigh": 1055.00,
+    "dayLow": 1045.00,
+    "52WeekHigh": 1100.00,
+    "52WeekLow": 800.00,
+    "marketCap": "7,30,000 Cr"
+  }
+]

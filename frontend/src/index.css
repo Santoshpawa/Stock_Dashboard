@@ -1,0 +1,222 @@
+/* General Body and Layout */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container,
+.stock-details-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: #1e3a8a; /* Dark Blue Header */
+  border-bottom: 3px solid #3b82f6; /* Blue Underline */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+h2 {
+  color: #4b5563;
+  margin-top: 25px;
+  font-size: 1.5em;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+/* Stock Table Styling */
+.stock-table-container {
+  overflow-x: auto;
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures rounded corners */
+}
+
+.stock-table th {
+  background-color: #eff6ff; /* Light Blue Header Background */
+  color: #1f2937;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #d1d5db;
+}
+
+.stock-table td {
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.stock-table tr.stock-row {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.stock-table tr.stock-row:hover {
+  background-color: #f1f8ff; /* Very Light Blue on Hover */
+  transform: scale(1.005);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stock-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Percentage Change Colors */
+td[style*="color: green"] {
+  font-weight: bold;
+  color: #10b981 !important; /* Green for positive change */
+}
+
+td[style*="color: red"] {
+  font-weight: bold;
+  color: #ef4444 !important; /* Red for negative change */
+}
+
+/* --- Stock Details Page Styling --- */
+
+.stock-details-container {
+  max-width: 700px;
+  border: 1px solid #e5e7eb;
+}
+
+.stock-details-container h1 {
+  color: #1e3a8a;
+  font-size: 2em;
+  border-bottom: none;
+}
+
+.stock-details-container h2 {
+  color: #ef4444; /* Red for symbol */
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.details-list {
+  margin-top: 20px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px dashed #e5e7eb;
+  align-items: center;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.detail-value {
+  font-size: 1.1em;
+  color: #1f2937;
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2563eb;
+}
+
+/* --- Stock Modal Styling (If used instead of page) --- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+.close-button:hover {
+  color: #ef4444;
+}
